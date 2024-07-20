@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restablecimiento de contraseña</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='forgotpass.css') }}">
+
+</head>
+
+<body>
+
+    <form action="{{ url_for('forgotpass') }}" method="post">
+        <div class="card">
+            <div class="card-header">Restablecimiento de contraseña</div>
+            <div class="card-body">
+                <p class="card-text">
+                    Ingrese su dirección de correo electrónico y le enviaremos un correo electrónico con instrucciones para restablecer su contraseña.
+                </p>
+                <div class="form-group">
+                    <input type="email" name="txtEmail" id="typeEmail" class="form-control" placeholder="Ingrese su correo electrónico" required />
+                </div>
+                <button type="submit" class="btn">Reset password</button>
+                <div class="links">
+                    <a href="/">Login</a>
+                    <a href="/register">Register</a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>

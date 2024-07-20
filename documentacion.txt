@@ -1,0 +1,50 @@
+Resumen de la Aplicación Web Flask
+
+Descripción General:
+Esta aplicación web, desarrollada con Flask, proporciona un sistema de autenticación y gestión de usuarios con las siguientes funcionalidades principales:
+
+1. Inicio de Sesión
+2. Registro de Nuevos Usuarios
+3. Recuperación de Contraseña
+4. Panel de Administración y Usuario
+
+Funcionalidades Principales:
+
+1. Inicio de Sesión:
+   - Permite a los usuarios acceder con su correo y contraseña.
+   - Diferencia entre roles de usuario (admin y usuario regular).
+
+2. Registro de Usuarios:
+   - Permite crear nuevas cuentas con información personal.
+   - Verifica la unicidad de cédula y correo electrónico.
+
+3. Recuperación de Contraseña:
+   - Sistema de restablecimiento de contraseña vía correo electrónico.
+
+4. Paneles Diferenciados:
+   - Panel de administración para usuarios con rol de admin.
+   - Panel de usuario para cuentas regulares.
+
+Tecnologías Utilizadas:
+- Flask: Framework web de Python
+- MySQL: Base de datos para almacenamiento de usuarios
+- Flask-Mail: Para envío de correos electrónicos
+
+Configuración Necesaria:
+- Conexión a base de datos MySQL
+- Configuración de servidor SMTP para envío de correos
+
+Seguridad:
+- Uso de sesiones para mantener el estado de autenticación
+- Verificación de roles para acceso a diferentes partes de la aplicación
+
+Notas Importantes:
+- Se requiere configurar adecuadamente las variables de entorno o el archivo de configuración para las credenciales de la base de datos y el servidor de correo.
+- La aplicación actualmente almacena las contraseñas en texto plano. Se recomienda implementar un sistema de hash de contraseñas para mejorar la seguridad.
+- El manejo de sesiones y la protección contra ataques comunes (como CSRF) deben ser revisados y mejorados para un entorno de producción.
+
+Futuras Mejoras:
+- Implementar hash de contraseñas
+- Añadir autenticación de dos factores
+- Mejorar la validación de datos de entrada
+- Implementar un sistema de logging para mejor seguimiento y depuración

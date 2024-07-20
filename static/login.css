@@ -1,0 +1,30 @@
+.caja {
+    margin: 10%;
+    margin-right: 35%;
+    margin-left: 35%;
+}
+
+.h1-login {
+    text-align: center;
+}
+
+.forgot-password:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.create-account {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.create-account:hover {
+    text-decoration: underline;
+}
